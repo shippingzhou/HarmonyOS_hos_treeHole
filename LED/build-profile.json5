@@ -1,0 +1,56 @@
+{
+  "app": {
+    "signingConfigs": [
+      {
+        "name": "default",
+        "type": "HarmonyOS",
+        "material": {
+          "storeFile": "/Users/gsios/Downloads/magic/hos/LED/signing/release.p12",
+          "storePassword": "000000226E9C5EC2255AF5A0DA56D43B306E7AB7FFBA1746DBFB4D7C02041953EA197EFA0BA63FF54BB97D51EE31F2FEE471",
+          "keyAlias": "Alias0",
+          "keyPassword": "0000002232771B218236BF08A191492C14800EB11384C3F191CD0A7F30D9188692BB78DD5A561995D6B8CC8C16C3FCAF5731",
+          "signAlg": "SHA256withECDSA",
+          "profile": "/Users/gsios/Downloads/magic/hos/LED/signing/release.p7b",
+          "certpath": "/Users/gsios/Downloads/magic/hos/LED/signing/release.cer"
+        }
+      }
+    ],
+    "products": [
+      {
+        "name": "default",
+        "signingConfig": "default",
+        "targetSdkVersion": "6.0.2(22)",
+        "compatibleSdkVersion": "5.0.5(17)",
+        "runtimeOS": "HarmonyOS",
+        "buildOption": {
+          "strictMode": {
+            "caseSensitiveCheck": true,
+            "useNormalizedOHMUrl": true
+          }
+        }
+      }
+    ],
+    "buildModeSet": [
+      {
+        "name": "debug",
+      },
+      {
+        "name": "release"
+      }
+    ]
+  },
+  "modules": [
+    {
+      "name": "entry",
+      "srcPath": "./entry",
+      "targets": [
+        {
+          "name": "default",
+          "applyToProducts": [
+            "default"
+          ]
+        }
+      ]
+    }
+  ]
+}

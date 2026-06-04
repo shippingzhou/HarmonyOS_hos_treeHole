@@ -1,0 +1,7 @@
+{
+  "layered-image":
+  {
+    "background" : "$media:orange0",
+    "foreground" : "$media:logo_led_1024"
+  }
+}
